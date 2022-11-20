@@ -11,6 +11,8 @@ def la_place(matrix):
 
     for i in range(len(var)):
         g *= -1
+        if matrix[0][i] == 0:
+            continue
         det += g * matrix[0][i] * la_place(scale_down(var, i))
     return det
 
@@ -24,7 +26,7 @@ def scale_down(matrix, i):
     return var
 
 
-a = [[9, 4, 2, 3, 2, 7],
+a = [[0, 0, 0, 3, 2, 3],
      [1, 3, 2, 2, 2, 5],
      [9, 9, 9, 3, 3, 6],
      [9, 9, 9, 4, 5, 7],
