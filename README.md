@@ -1,2 +1,2 @@
 # Matrix-determinant
-Calculated using Laplace Expansions 
+Calculated using Laplace Expansion
